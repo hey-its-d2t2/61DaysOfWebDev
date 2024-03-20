@@ -1,18 +1,45 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     height: 100%;
     width: 100%;
 }
-.container{
+
+.container {
     max-width: 66vw;
     padding: 2rem 1rem;
     margin: 0 auto;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.header-container {
+    margin-bottom: 2.8rem;
+}
+
+.header-title {
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header-desc {
+    max-width: 568px;
+    text-align: center;
+    color: rgb(93, 93, 93);
+    margin: 0 auto;
+}
+
+.main-container {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
 }
