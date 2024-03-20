@@ -34,5 +34,67 @@ a{
 ul{
     list-style: none;
 }
+.link-text{
+    color: var(--link-text-color);
+}
 
 /* Utility */
+.primary-button{
+    background-color: var(--link-text-color);
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition:  0.2s ease-out;
+}
+.secoandry-button{
+    font-weight: 700;
+    color: var(--primary-text-color) !important;
+    padding: 12px 24px;
+    transition: 0.2s ease-out;
+}
+.secoandry-button:hover{
+    border: 1px solid;
+    border-radius: 6px;
+    border-color: var(--link-text-color);
+    color:var(--link-text-color) !important;
+}
+.primary-button:hover{
+    color: var(--link-text-color);
+    background-color: var(--secoandry-text-color);
+}
+/* Navbar */
+.nav{
+    display: flex;
+    height: 65px;
+    width: 100vw;
+    place-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid gray;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    scroll-behavior: fixed;
+    cursor: pointer;
+}
+.nav-logo{
+    width: 25%;
+}   
+
+.nav-links-main a{
+    color: var(--primary-text-color);
+    padding: 1.4rem 1.5rem;
+    font-size: 1rem;
+}
+.nav-links-main a:hover{
+    border-top: 2px solid var(--link-text-color);
+    border-bottom: 2px solid var(--link-text-color);
+    color: var(--link-text-color);
+    transition: 0.2s ease-out;
+}
+.nav-links-action{
+    width: 25%;
+    text-align: end;
+    gap: 50px;
+}
+/* Hero */
