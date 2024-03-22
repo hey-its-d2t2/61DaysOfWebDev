@@ -5,8 +5,8 @@
 }
 
 :root {
-    --primary-text-color: black;
-    --secoandry-text-color: rgb(44, 44, 44);
+    --primary-text-color: #000;
+    --secoandry-text-color: #2c2c2c;
     --link-text-color: blue;
     --padding-inline-section: 20px;
 }
@@ -14,6 +14,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
+    overflow: none;
 }
 
 h1 {
@@ -28,7 +29,7 @@ p {
     font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     color: var(--secondary-text-color);
-    line-height: 1.8rem;
+    line-height: 1.8rem
 }
 
 a {
@@ -45,21 +46,26 @@ ul {
 }
 
 /* Utility */
+.container {
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
 .primary-button {
     background-color: var(--link-text-color);
     border-radius: 6px;
     font-weight: 700;
-    color: white !important;
+    color: #fff !important;
     padding: 12px 24px;
     box-shadow: 0 0 2px var(--secondary-text-color);
-    transition: 0.2s ease-out;
+    transition: .2s ease-out;
 }
 
 .secoandry-button {
     font-weight: 700;
     color: var(--primary-text-color) !important;
     padding: 12px 24px;
-    transition: 0.2s ease-out;
+    transition: .2s ease-out;
 }
 
 .secoandry-button:hover {
@@ -83,7 +89,7 @@ ul {
     justify-content: space-between;
     padding: 0 30px;
     border-bottom: 1px solid gray;
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-shadow: #00000026 1.95px 1.95px 2.6px;
     scroll-behavior: fixed;
     cursor: pointer;
 }
@@ -93,7 +99,7 @@ ul {
 }
 
 .nav-links-main a {
-    color: var(--primary-text-color);
+    color: var(--primary-text-color) !important;
     padding: 1.4rem 1.5rem;
     font-size: 1rem;
 }
@@ -102,13 +108,12 @@ ul {
     border-top: 2px solid var(--link-text-color);
     border-bottom: 2px solid var(--link-text-color);
     color: var(--link-text-color);
-    transition: 0.2s ease-out;
+    transition: .2s ease-out;
 }
 
 .nav-links-action {
     width: 25%;
     text-align: end;
-    gap: 50px;
 }
 
 /* Hero */
@@ -116,27 +121,45 @@ ul {
     display: flex;
     padding: 1rem 5rem;
     place-items: center;
+    /* background-color: #000; */
 }
 
 .hero-left {
     width: 50%;
 }
+.hero-right {
+    width: 50%;
+    background-color: green;
+    display: flex;
+    justify-content: end;
+}
 
 .hero-left p {
     margin-top: 2rem;
     line-height: 1.7;
+    color: var(--secoandry-text-color) !important;
 }
+
 .hero-left a {
     margin-top: 2rem;
 }
-.hero-right {
-    width: 50%;
-    padding-left: 1rem;
-}
+
+
 .hero-right img {
     object-fit: cover;
     overflow: none;
     height: 100%;
-    width: 95%;
+    width: 90%;
+    
+    
 }
+
 /* Contert-1 */
+.content-1 {
+    /* width: 100vw; */
+    height: 200px;
+    border-top: 1px solid #000;
+    background-color: aqua;
+    text-align: center;
+    padding: 2rem 25rem
+}
